@@ -103,6 +103,7 @@ with open('circle_data.csv', 'w', newline='') as file:
     for circle in circles:
         writer.writerow(tuple(circle[:2]) + (circle[2],))  # Write circle coordinates and radius
 
+# Let the user know that the program has finished running
 print('complete')
 # Quit the program
 pygame.quit()
